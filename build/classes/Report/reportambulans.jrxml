@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="659ac7dd-2590-4f27-98a0-5c2e231350fc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     ambulans.`id_ambulans` AS ambulans_id_ambulans,
+     ambulans.`jenis_kendaraan` AS ambulans_jenis_kendaraan,
+     ambulans.`masa_berlaku` AS ambulans_masa_berlaku
+FROM
+     `ambulans` ambulans]]>
+	</queryString>
+	<field name="ambulans_id_ambulans" class="java.lang.String"/>
+	<field name="ambulans_jenis_kendaraan" class="java.lang.String"/>
+	<field name="ambulans_masa_berlaku" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="150" splitType="Stretch">
+			<image>
+				<reportElement uuid="a62ce5d1-937f-4c71-afaf-2c39c14ffe2c" x="1" y="0" width="801" height="150"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\gradient.jpeg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="e683ddc6-75e5-4097-8cac-4d58edc74c2d" x="364" y="109" width="128" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Jakarta Timur 13470]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50330e19-0b7f-403e-9b89-765697c766b5" x="349" y="69" width="175" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kel. Klender, Kec. Duren Sawit ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50330e19-0b7f-403e-9b89-765697c766b5" x="313" y="49" width="228" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. I Gusti Ngurah Rai No.77 RT.1/RW.16]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a2eec29f-3b4e-42bb-9b94-5ff4b6c4a03b" x="331" y="9" width="200" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PALANG MERAH INDONESIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d792e2fe-5ecb-4ae4-9cb5-971f0e4a9361" x="375" y="89" width="117" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Telp (021) 8611832]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f530a9c4-4d59-43fc-9faf-121ba123ecc2" x="294" y="29" width="266" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KOTA ADMINISTRASI JAKARTA TIMUR]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="b7ed3bd7-90af-464f-bcb0-0c3a547f68fb" x="30" y="29" width="170" height="100"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\pmitext.png.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f530a9c4-4d59-43fc-9faf-121ba123ecc2" x="294" y="0" width="266" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA AMBULAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b203ba91-eeda-4c45-a391-239efb6b72bb" x="1" y="24" width="249" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Ambulans]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="823c361e-08e0-40c8-b1d2-9aa5b385d0e7" x="250" y="24" width="252" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kendaraan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a8047785-0165-4026-848b-444c933f613c" x="502" y="24" width="300" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Masa Berlaku Kendaraan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="6ff12e07-e4c6-4b5e-8583-f060f2d794ea" x="1" y="0" width="249" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ambulans_id_ambulans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d650ac89-59b7-495a-ac68-99adb0f54a3e" x="250" y="0" width="252" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ambulans_jenis_kendaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1739255b-f9e0-458a-801a-64ef72a5a3e7" x="502" y="0" width="300" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ambulans_masa_berlaku}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="304e03d6-a9a9-45b6-a543-d69600d13f2e" x="644" y="20" width="115" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Koordinator Lapangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f98b9c1c-23f1-4450-90e2-c9b0bf053d55" x="629" y="0" width="37" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4e5e6f1c-0df9-41f1-a7d6-de5a2cd1f4e7" x="647" y="85" width="112" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[ (Shella Rana Juwita)]]></text>
+			</staticText>
+			<textField pattern="EEEE dd MMMM yyyy" isBlankWhenNull="false">
+				<reportElement uuid="138f6a17-224b-470e-92e2-4582afe9e061" x="668" y="0" width="134" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="aed7788f-63ab-4f13-8e08-ec4ccc8fd4cc" x="678" y="35" width="50" height="48"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\pmi cap.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cebb71c3-d9ba-48e7-8e98-7b73e885dfd6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     penanganan.`id_penanganan` AS penanganan_id_penanganan,
+     penanganan.`id_standby` AS penanganan_id_standby,
+     penanganan.`nama_pasien` AS penanganan_nama_pasien,
+     penanganan.`nama_petugas` AS penanganan_nama_petugas,
+     penanganan.`keterangan` AS penanganan_keterangan,
+     penanganan.`waktu` AS penanganan_waktu,
+     penanganan.`keterangan_akhir` AS penanganan_keterangan_akhir
+FROM
+     `penanganan` penanganan]]>
+	</queryString>
+	<field name="penanganan_id_penanganan" class="java.lang.String"/>
+	<field name="penanganan_id_standby" class="java.lang.String"/>
+	<field name="penanganan_nama_pasien" class="java.lang.String"/>
+	<field name="penanganan_nama_petugas" class="java.lang.String"/>
+	<field name="penanganan_keterangan" class="java.lang.String"/>
+	<field name="penanganan_waktu" class="java.lang.String"/>
+	<field name="penanganan_keterangan_akhir" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="144" splitType="Stretch">
+			<image>
+				<reportElement uuid="a62ce5d1-937f-4c71-afaf-2c39c14ffe2c" x="0" y="0" width="801" height="144"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\gradient.jpeg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="b7ed3bd7-90af-464f-bcb0-0c3a547f68fb" x="62" y="29" width="170" height="100"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\pmitext.png.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="d792e2fe-5ecb-4ae4-9cb5-971f0e4a9361" x="391" y="89" width="117" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Telp (021) 8611832]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f530a9c4-4d59-43fc-9faf-121ba123ecc2" x="310" y="29" width="266" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KOTA ADMINISTRASI JAKARTA TIMUR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a2eec29f-3b4e-42bb-9b94-5ff4b6c4a03b" x="347" y="9" width="200" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PALANG MERAH INDONESIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e683ddc6-75e5-4097-8cac-4d58edc74c2d" x="380" y="109" width="128" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Jakarta Timur 13470]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50330e19-0b7f-403e-9b89-765697c766b5" x="365" y="69" width="175" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kel. Klender, Kec. Duren Sawit ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50330e19-0b7f-403e-9b89-765697c766b5" x="329" y="49" width="228" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. I Gusti Ngurah Rai No.77 RT.1/RW.16]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f530a9c4-4d59-43fc-9faf-121ba123ecc2" x="254" y="0" width="286" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PENANGANAN PASIEN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="48f512fa-90f2-4777-95f6-d8bee8c24c50" x="0" y="3" width="120" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID Penanganan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="25173ca7-4f5a-445f-9f67-2148e65bed35" x="120" y="3" width="123" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID Standby]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d48847c6-8457-4b9c-a2b6-84d3b2397226" x="243" y="3" width="104" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Pasien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d01716b4-62da-43c0-9cff-c34bb04d4ee6" x="347" y="3" width="112" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9bfea7b5-bfbb-4ad1-99ca-5f3d2d92421a" x="457" y="3" width="119" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f52790fc-4374-4d5f-a734-3db5d6f52ecf" x="576" y="3" width="114" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Waktu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9725988f-c51a-4415-8daa-bdfac3920b5f" x="690" y="3" width="111" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Keterangan Akhir]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d57a2a0c-5893-40fb-8c71-5074d6f9a0ee" x="0" y="0" width="120" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_id_penanganan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d3b9209e-4d9b-44a6-bf06-8e5f56acb0d3" x="120" y="0" width="123" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_id_standby}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="aaa1f2f1-77a6-4e26-9a7c-124a4a2dc8be" x="243" y="0" width="104" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_nama_pasien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="60ef6f7e-be80-411c-9bdc-e4611c625167" x="347" y="0" width="112" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_nama_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e47ab260-54ce-4386-9ca0-fa141d819b0e" x="457" y="0" width="119" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_keterangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0814cc93-b724-4818-9107-a55557d31627" x="576" y="0" width="114" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_waktu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09a851ad-9d5b-4fe2-be52-1be910e9cff0" x="690" y="0" width="111" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penanganan_keterangan_akhir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="304e03d6-a9a9-45b6-a543-d69600d13f2e" x="596" y="22" width="115" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Koordinator Lapangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4e5e6f1c-0df9-41f1-a7d6-de5a2cd1f4e7" x="599" y="99" width="112" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[(Shella Rana Juwita)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f98b9c1c-23f1-4450-90e2-c9b0bf053d55" x="581" y="2" width="37" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEE dd MMMM yyyy" isBlankWhenNull="false">
+				<reportElement uuid="138f6a17-224b-470e-92e2-4582afe9e061" x="620" y="2" width="134" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="aed7788f-63ab-4f13-8e08-ec4ccc8fd4cc" x="620" y="42" width="50" height="48"/>
+				<imageExpression><![CDATA["C:\\Users\\dimas setyanto\\Documents\\App Posko PMI V 2.3\\src\\Image\\pmi cap.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
