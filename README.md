@@ -1,4 +1,4 @@
-# Aplikasi Manajemen Posko Pelayanan PMI Jakarta Timur
+# Sistem Manajemen Posko Pelayanan PMI Jakarta Timur
 
 ![img alt](https://github.com/neubrii/sistem-manajemen-posko-pelayanan-pmi/blob/1ec058f042a5164ac296d7f108eb8a26c2137512/screenshot.jpg)
 
